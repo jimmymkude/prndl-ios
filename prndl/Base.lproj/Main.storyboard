@@ -171,10 +171,10 @@
             </objects>
             <point key="canvasLocation" x="200.80000000000001" y="-1068.215892053973"/>
         </scene>
-        <!--View Controller-->
+        <!--Email Form View Controller-->
         <scene sceneID="0TR-qy-sHI">
             <objects>
-                <viewController id="QFH-Hx-Vbr" sceneMemberID="viewController">
+                <viewController id="QFH-Hx-Vbr" customClass="EmailFormViewController" customModule="prndl" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="eAw-AP-dhG"/>
                         <viewControllerLayoutGuide type="bottom" id="QNc-YT-S4o"/>
