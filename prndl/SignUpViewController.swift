@@ -42,6 +42,11 @@ class SignUpViewController: UIViewController, UITableViewDelegate, UITableViewDa
         return menuItems.count
     }
     
+    @IBAction func cancelToSignUpViewController1(segue:UIStoryboardSegue) {
+    }
+    
+    @IBAction func saveToSignUpViewController1(segue:UIStoryboardSegue) {
+    }
 
     /*
     // MARK: - Navigation
