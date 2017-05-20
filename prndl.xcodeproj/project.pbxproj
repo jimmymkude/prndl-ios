@@ -14,6 +14,10 @@
 		320171AD1ED03D1C00AFB2A6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 320171AB1ED03D1C00AFB2A6 /* LaunchScreen.storyboard */; };
 		320171B81ED03D1C00AFB2A6 /* prndlTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320171B71ED03D1C00AFB2A6 /* prndlTests.swift */; };
 		320171C31ED03D1C00AFB2A6 /* prndlUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320171C21ED03D1C00AFB2A6 /* prndlUITests.swift */; };
+		320171D11ED03D1C00AFB2A6 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320171D01ED03D1C00AFB2A6 /* SignUpViewController.swift */; };
+		320171D31ED03D1C00AFB2A6 /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320171D21ED03D1C00AFB2A6 /* MessagesViewController.swift */; };
+		320171D51ED03D1C00AFB2A6 /* ParkerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320171D41ED03D1C00AFB2A6 /* ParkerViewController.swift */; };
+		320171D71ED03D1C00AFB2A6 /* ProviderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320171D61ED03D1C00AFB2A6 /* ProviderViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +51,10 @@
 		320171BE1ED03D1C00AFB2A6 /* prndlUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = prndlUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		320171C21ED03D1C00AFB2A6 /* prndlUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = prndlUITests.swift; sourceTree = "<group>"; };
 		320171C41ED03D1C00AFB2A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		320171D01ED03D1C00AFB2A6 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		320171D21ED03D1C00AFB2A6 /* MessagesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagesViewController.swift; sourceTree = "<group>"; };
+		320171D41ED03D1C00AFB2A6 /* ParkerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParkerViewController.swift; sourceTree = "<group>"; };
+		320171D61ED03D1C00AFB2A6 /* ProviderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProviderViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +107,10 @@
 			children = (
 				320171A21ED03D1C00AFB2A6 /* AppDelegate.swift */,
 				320171A41ED03D1C00AFB2A6 /* ViewController.swift */,
+				320171D01ED03D1C00AFB2A6 /* SignUpViewController.swift */,
+				320171D21ED03D1C00AFB2A6 /* MessagesViewController.swift */,
+				320171D41ED03D1C00AFB2A6 /* ParkerViewController.swift */,
+				320171D61ED03D1C00AFB2A6 /* ProviderViewController.swift */,
 				320171A61ED03D1C00AFB2A6 /* Main.storyboard */,
 				320171A91ED03D1C00AFB2A6 /* Assets.xcassets */,
 				320171AB1ED03D1C00AFB2A6 /* LaunchScreen.storyboard */,
@@ -259,7 +271,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				320171D11ED03D1C00AFB2A6 /* SignUpViewController.swift in Sources */,
+				320171D51ED03D1C00AFB2A6 /* ParkerViewController.swift in Sources */,
 				320171A51ED03D1C00AFB2A6 /* ViewController.swift in Sources */,
+				320171D71ED03D1C00AFB2A6 /* ProviderViewController.swift in Sources */,
+				320171D31ED03D1C00AFB2A6 /* MessagesViewController.swift in Sources */,
 				320171A31ED03D1C00AFB2A6 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
