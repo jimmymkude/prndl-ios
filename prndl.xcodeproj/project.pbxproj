@@ -18,6 +18,7 @@
 		320171D31ED03D1C00AFB2A6 /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320171D21ED03D1C00AFB2A6 /* MessagesViewController.swift */; };
 		320171D51ED03D1C00AFB2A6 /* ParkerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320171D41ED03D1C00AFB2A6 /* ParkerViewController.swift */; };
 		320171D71ED03D1C00AFB2A6 /* ProviderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320171D61ED03D1C00AFB2A6 /* ProviderViewController.swift */; };
+		323E8A651ED094AE00A1084E /* WhatsYourNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323E8A641ED094AE00A1084E /* WhatsYourNameViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		320171D21ED03D1C00AFB2A6 /* MessagesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagesViewController.swift; sourceTree = "<group>"; };
 		320171D41ED03D1C00AFB2A6 /* ParkerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParkerViewController.swift; sourceTree = "<group>"; };
 		320171D61ED03D1C00AFB2A6 /* ProviderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProviderViewController.swift; sourceTree = "<group>"; };
+		323E8A641ED094AE00A1084E /* WhatsYourNameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WhatsYourNameViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +110,7 @@
 				320171A21ED03D1C00AFB2A6 /* AppDelegate.swift */,
 				320171A41ED03D1C00AFB2A6 /* ViewController.swift */,
 				320171D01ED03D1C00AFB2A6 /* SignUpViewController.swift */,
+				323E8A641ED094AE00A1084E /* WhatsYourNameViewController.swift */,
 				320171D21ED03D1C00AFB2A6 /* MessagesViewController.swift */,
 				320171D41ED03D1C00AFB2A6 /* ParkerViewController.swift */,
 				320171D61ED03D1C00AFB2A6 /* ProviderViewController.swift */,
@@ -272,6 +275,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				320171D11ED03D1C00AFB2A6 /* SignUpViewController.swift in Sources */,
+				323E8A651ED094AE00A1084E /* WhatsYourNameViewController.swift in Sources */,
 				320171D51ED03D1C00AFB2A6 /* ParkerViewController.swift in Sources */,
 				320171A51ED03D1C00AFB2A6 /* ViewController.swift in Sources */,
 				320171D71ED03D1C00AFB2A6 /* ProviderViewController.swift in Sources */,
@@ -523,6 +527,7 @@
 				320171C91ED03D1C00AFB2A6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		320171CA1ED03D1C00AFB2A6 /* Build configuration list for PBXNativeTarget "prndlTests" */ = {
 			isa = XCConfigurationList;
@@ -531,6 +536,7 @@
 				320171CC1ED03D1C00AFB2A6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		320171CD1ED03D1C00AFB2A6 /* Build configuration list for PBXNativeTarget "prndlUITests" */ = {
 			isa = XCConfigurationList;
@@ -539,6 +545,7 @@
 				320171CF1ED03D1C00AFB2A6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
