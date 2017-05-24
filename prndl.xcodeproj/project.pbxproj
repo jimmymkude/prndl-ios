@@ -20,6 +20,11 @@
 		320171D71ED03D1C00AFB2A6 /* ProviderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320171D61ED03D1C00AFB2A6 /* ProviderViewController.swift */; };
 		323E8A651ED094AE00A1084E /* WhatsYourNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323E8A641ED094AE00A1084E /* WhatsYourNameViewController.swift */; };
 		323E8A671ED0991C00A1084E /* EmailFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323E8A661ED0991C00A1084E /* EmailFormViewController.swift */; };
+		32977FF51ED623910053C282 /* PhoneNumberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32977FF41ED623910053C282 /* PhoneNumberViewController.swift */; };
+		32977FF71ED624200053C282 /* RideInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32977FF61ED624200053C282 /* RideInfoViewController.swift */; };
+		32977FF91ED624860053C282 /* PlateNumberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32977FF81ED624860053C282 /* PlateNumberViewController.swift */; };
+		32977FFB1ED624D70053C282 /* PaymentChoiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32977FFA1ED624D70053C282 /* PaymentChoiceViewController.swift */; };
+		32977FFD1ED625420053C282 /* CardDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32977FFC1ED625420053C282 /* CardDetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +64,11 @@
 		320171D61ED03D1C00AFB2A6 /* ProviderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProviderViewController.swift; sourceTree = "<group>"; };
 		323E8A641ED094AE00A1084E /* WhatsYourNameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WhatsYourNameViewController.swift; sourceTree = "<group>"; };
 		323E8A661ED0991C00A1084E /* EmailFormViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailFormViewController.swift; sourceTree = "<group>"; };
+		32977FF41ED623910053C282 /* PhoneNumberViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhoneNumberViewController.swift; sourceTree = "<group>"; };
+		32977FF61ED624200053C282 /* RideInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RideInfoViewController.swift; sourceTree = "<group>"; };
+		32977FF81ED624860053C282 /* PlateNumberViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlateNumberViewController.swift; sourceTree = "<group>"; };
+		32977FFA1ED624D70053C282 /* PaymentChoiceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentChoiceViewController.swift; sourceTree = "<group>"; };
+		32977FFC1ED625420053C282 /* CardDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardDetailsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +124,11 @@
 				320171D01ED03D1C00AFB2A6 /* SignUpViewController.swift */,
 				323E8A641ED094AE00A1084E /* WhatsYourNameViewController.swift */,
 				323E8A661ED0991C00A1084E /* EmailFormViewController.swift */,
+				32977FF41ED623910053C282 /* PhoneNumberViewController.swift */,
+				32977FF61ED624200053C282 /* RideInfoViewController.swift */,
+				32977FF81ED624860053C282 /* PlateNumberViewController.swift */,
+				32977FFA1ED624D70053C282 /* PaymentChoiceViewController.swift */,
+				32977FFC1ED625420053C282 /* CardDetailsViewController.swift */,
 				320171D21ED03D1C00AFB2A6 /* MessagesViewController.swift */,
 				320171D41ED03D1C00AFB2A6 /* ParkerViewController.swift */,
 				320171D61ED03D1C00AFB2A6 /* ProviderViewController.swift */,
@@ -211,6 +226,7 @@
 				TargetAttributes = {
 					3201719E1ED03D1C00AFB2A6 = {
 						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = WGRX76RE4M;
 						ProvisioningStyle = Automatic;
 					};
 					320171B21ED03D1C00AFB2A6 = {
@@ -277,14 +293,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32977FFB1ED624D70053C282 /* PaymentChoiceViewController.swift in Sources */,
 				320171D11ED03D1C00AFB2A6 /* SignUpViewController.swift in Sources */,
 				323E8A651ED094AE00A1084E /* WhatsYourNameViewController.swift in Sources */,
+				32977FF71ED624200053C282 /* RideInfoViewController.swift in Sources */,
 				320171D51ED03D1C00AFB2A6 /* ParkerViewController.swift in Sources */,
 				323E8A671ED0991C00A1084E /* EmailFormViewController.swift in Sources */,
+				32977FFD1ED625420053C282 /* CardDetailsViewController.swift in Sources */,
 				320171A51ED03D1C00AFB2A6 /* ViewController.swift in Sources */,
+				32977FF91ED624860053C282 /* PlateNumberViewController.swift in Sources */,
 				320171D71ED03D1C00AFB2A6 /* ProviderViewController.swift in Sources */,
 				320171D31ED03D1C00AFB2A6 /* MessagesViewController.swift in Sources */,
 				320171A31ED03D1C00AFB2A6 /* AppDelegate.swift in Sources */,
+				32977FF51ED623910053C282 /* PhoneNumberViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -438,6 +459,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = WGRX76RE4M;
 				INFOPLIST_FILE = prndl/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jsm.prndl;
@@ -450,6 +472,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = WGRX76RE4M;
 				INFOPLIST_FILE = prndl/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jsm.prndl;
