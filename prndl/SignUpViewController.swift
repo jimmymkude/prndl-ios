@@ -15,7 +15,7 @@ class SignUpViewController: UIViewController, UITableViewDelegate, UITableViewDa
     @IBOutlet weak var welcomeLabel: UILabel!
     
     var signedIn : Bool = false
-    var userName : String = "<Name>"
+    var userInfo : UserInfo?
     
     let menuItems = [
             "Reservations",
@@ -40,7 +40,7 @@ class SignUpViewController: UIViewController, UITableViewDelegate, UITableViewDa
     
     func update(){
         if signedIn{
-            welcomeLabel.text = "Welcome \(userName)"
+            welcomeLabel.text = "Welcome \(userInfo!.firstName)"
             signUpBtn.isEnabled = false
             signUpBtn.isHidden = true
         }
@@ -48,7 +48,7 @@ class SignUpViewController: UIViewController, UITableViewDelegate, UITableViewDa
     
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell"/*Identifier*/, for: indexPath as IndexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath as IndexPath)
         cell.textLabel?.text = menuItems[indexPath.row]
         return cell
     }
@@ -57,12 +57,19 @@ class SignUpViewController: UIViewController, UITableViewDelegate, UITableViewDa
         return menuItems.count
     }
     
+    
+    
+    func loadUserInfo(userinfo: UserInfo){
+        self.userInfo = userinfo
+        signedIn = true
+        update()
+    }
+    
     @IBAction func cancelToSignUpViewController1(segue:UIStoryboardSegue) {
     }
     
     @IBAction func saveToSignUpViewController1(segue:UIStoryboardSegue) {
-        signedIn = true
-        update()
+        
         print("Saving to segue sign up view controller")
     }
 

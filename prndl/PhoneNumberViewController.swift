@@ -10,6 +10,8 @@ import UIKit
 
 class PhoneNumberViewController: UIViewController, UITextFieldDelegate {
     var userInfo : UserInfo?
+    
+    
     var phoneNum : String = ""
     var nextClicked = false
     var decimalString : NSString = ""

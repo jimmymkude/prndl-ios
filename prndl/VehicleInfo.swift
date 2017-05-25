@@ -13,4 +13,11 @@ class VehicleInfo {
     var color = ""
     var make = ""
     var model = ""
+    
+    init(color: String = "", make: String = "", model: String = "", plateNo: String = ""){
+        self.color = color
+        self.make = make
+        self.model = model
+        self.plateNo = plateNo
+    }
 }

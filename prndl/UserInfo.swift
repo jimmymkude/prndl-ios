@@ -14,6 +14,8 @@ class UserInfo {
     var email = ""
     var passwd = ""
     var phoneNo = ""
+    var vehicleInfo : VehicleInfo?
+    var paymentChoice = ""
     
     init?(first: String = "", last: String = "", email: String = "", passwd: String = "", phoneNo: String = "") {
         self.firstName = first

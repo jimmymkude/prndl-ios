@@ -653,7 +653,7 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XRN-IW-Fal">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="E.g ABC1234" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XRN-IW-Fal">
                                 <rect key="frame" x="16" y="147" width="343" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
@@ -692,6 +692,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
+                                    <action selector="onSkipBtnClicked:forEvent:" destination="SaF-An-lH7" eventType="touchUpInside" id="fuN-OS-Cid"/>
                                     <segue destination="OeG-u6-4PN" kind="show" identifier="next" id="xiP-fw-T06"/>
                                 </connections>
                             </button>
@@ -712,6 +713,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
+                                    <action selector="onNextBtnClicked:forEvent:" destination="SaF-An-lH7" eventType="touchUpInside" id="aDv-1X-m8d"/>
                                     <segue destination="OeG-u6-4PN" kind="show" identifier="next" id="6ny-aD-WMB"/>
                                 </connections>
                             </button>
@@ -719,6 +721,9 @@
                         <color key="backgroundColor" red="0.64238502470000003" green="0.456598954" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="plateNumberTextField" destination="XRN-IW-Fal" id="nCH-xI-70o"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UlM-YT-g4R" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="NAW-V9-uQc" userLabel="Exit" sceneMemberID="exit"/>
@@ -770,6 +775,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
+                                    <action selector="onLaterSelected:forEvent:" destination="OeG-u6-4PN" eventType="touchUpInside" id="y78-wD-lG8"/>
                                     <segue destination="YUq-UO-Oh3" kind="unwind" unwindAction="saveToSignUpViewController1WithSegue:" id="tNX-Wd-Lpr"/>
                                 </connections>
                             </button>
@@ -792,6 +798,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
+                                    <action selector="onCardSelected:forEvent:" destination="OeG-u6-4PN" eventType="touchUpInside" id="OPg-dN-KLP"/>
                                     <segue destination="i0d-UR-uRw" kind="show" identifier="next" id="8db-Jb-aFm"/>
                                 </connections>
                             </button>
@@ -813,6 +820,9 @@
                                         <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="onVenmoSelected:forEvent:" destination="OeG-u6-4PN" eventType="touchUpInside" id="Bfg-JQ-H3p"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CFZ-JV-eN0">
                                 <rect key="frame" x="16" y="28" width="17" height="22"/>
@@ -925,6 +935,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
+                                    <action selector="onDoneBtnClicked:forEvent:" destination="i0d-UR-uRw" eventType="touchUpInside" id="dx6-4c-FhP"/>
                                     <segue destination="Q7W-9V-CPY" kind="unwind" unwindAction="saveToSignUpViewController1WithSegue:" id="aDO-f4-LOP"/>
                                 </connections>
                             </button>
@@ -939,6 +950,12 @@
                         </subviews>
                         <color key="backgroundColor" red="0.64238502470000003" green="0.456598954" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
+                    <connections>
+                        <outlet property="cardNumberTextField" destination="lhU-Fc-u48" id="pa8-uV-3br"/>
+                        <outlet property="cvvTextField" destination="zBC-dF-1EJ" id="WZj-Om-0YO"/>
+                        <outlet property="expirationTextField" destination="w8u-xc-CR0" id="Vpe-jm-0dV"/>
+                        <outlet property="zipCodeTextField" destination="xS1-rb-BGq" id="eOl-jH-lKe"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zS9-jZ-A4s" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="Q7W-9V-CPY" userLabel="Exit" sceneMemberID="exit"/>
@@ -951,7 +968,7 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="k6n-7P-N0S"/>
-        <segue reference="5u3-cs-Oao"/>
+        <segue reference="5PJ-Jh-hZz"/>
         <segue reference="6ny-aD-WMB"/>
     </inferredMetricsTieBreakers>
 </document>

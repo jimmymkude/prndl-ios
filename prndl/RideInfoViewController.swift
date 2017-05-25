@@ -18,6 +18,8 @@ class RideInfoViewController: UIViewController, UIPickerViewDataSource, UIPicker
     @IBOutlet weak var makePickerView: UIPickerView!
     
     var userInfo : UserInfo?
+    var vehicleInfo : VehicleInfo?
+    
     var color = ""
     var make = ""
     var model = ""
@@ -110,7 +112,8 @@ class RideInfoViewController: UIViewController, UIPickerViewDataSource, UIPicker
     @IBAction func onNextBtnClicked(_ sender: Any, forEvent event: UIEvent) {
         self.nextClicked = true
         self.model = modelTextField.text!
-        
+        vehicleInfo = VehicleInfo(color: self.color, make: self.make, model: self.model)
+        self.userInfo?.vehicleInfo = vehicleInfo
     }
     
     @IBAction func onSkipBtnClicked(_ sender: Any, forEvent event: UIEvent) {
