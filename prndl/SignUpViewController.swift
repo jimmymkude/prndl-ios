@@ -11,6 +11,11 @@ import UIKit
 class SignUpViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var signUpBtn: UIButton!
+    @IBOutlet weak var welcomeLabel: UILabel!
+    
+    var signedIn : Bool = false
+    var userName : String = "<Name>"
     
     let menuItems = [
             "Reservations",
@@ -22,8 +27,9 @@ class SignUpViewController: UIViewController, UITableViewDelegate, UITableViewDa
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        print("Loading sign up view controller")
         tableView.tableFooterView = UIView()
-
+        
         // Do any additional setup after loading the view.
     }
 
@@ -31,6 +37,15 @@ class SignUpViewController: UIViewController, UITableViewDelegate, UITableViewDa
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    func update(){
+        if signedIn{
+            welcomeLabel.text = "Welcome \(userName)"
+            signUpBtn.isEnabled = false
+            signUpBtn.isHidden = true
+        }
+    }
+    
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell"/*Identifier*/, for: indexPath as IndexPath)
@@ -46,6 +61,9 @@ class SignUpViewController: UIViewController, UITableViewDelegate, UITableViewDa
     }
     
     @IBAction func saveToSignUpViewController1(segue:UIStoryboardSegue) {
+        signedIn = true
+        update()
+        print("Saving to segue sign up view controller")
     }
 
     /*
