@@ -101,14 +101,22 @@ class PhoneNumberViewController: UIViewController, UITextFieldDelegate {
     }
     
     @IBAction func onSkipBtnClicked(_ sender: Any, forEvent event: UIEvent) {
+        nextClicked = false
     }
     
     override func shouldPerformSegue(withIdentifier identifier: String?, sender: Any?) -> Bool {
-        if !nextClicked || validatePhoneNumber() {
-            return true
+        if let ident = identifier {
+            if ident != "next" {
+                return true
+            }
+            if !nextClicked || validatePhoneNumber() {
+                return true
+            }
+            
+            return false
         }
         
-        return false
+        return true
     }
     
     // MARK: - Navigation

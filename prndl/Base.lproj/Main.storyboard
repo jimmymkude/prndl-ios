@@ -161,7 +161,7 @@
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="onNextClicked:forEvent:" destination="uMd-P8-dxs" eventType="touchUpInside" id="q6u-2A-1af"/>
-                                    <segue destination="QFH-Hx-Vbr" kind="show" id="shi-36-j63"/>
+                                    <segue destination="QFH-Hx-Vbr" kind="show" identifier="next" id="shi-36-j63"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -271,7 +271,7 @@
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="onNextBtnClicked:forEvent:" destination="QFH-Hx-Vbr" eventType="touchUpInside" id="qhc-tI-gQB"/>
-                                    <segue destination="pbw-Xj-Jd6" kind="show" id="Srx-sq-vwe"/>
+                                    <segue destination="pbw-Xj-Jd6" kind="show" identifier="next" id="Srx-sq-vwe"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -337,7 +337,7 @@
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="onSkipBtnClicked:forEvent:" destination="pbw-Xj-Jd6" eventType="touchUpInside" id="oW2-yO-Rxj"/>
-                                    <segue destination="4vr-yp-JwV" kind="show" id="sdh-bO-QGQ"/>
+                                    <segue destination="4vr-yp-JwV" kind="show" identifier="next" id="sdh-bO-QGQ"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zRh-s7-1Bo">
@@ -357,7 +357,7 @@
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="onNextBtnClicked:forEvent:" destination="pbw-Xj-Jd6" eventType="touchUpInside" id="P5m-Se-rf9"/>
-                                    <segue destination="4vr-yp-JwV" kind="show" id="k6n-7P-N0S"/>
+                                    <segue destination="4vr-yp-JwV" kind="show" identifier="next" id="k6n-7P-N0S"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Phone #" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ubn-xX-v6n">
@@ -511,33 +511,39 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="COLOR" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0oH-Jv-xvs">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="What color is your ride?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0oH-Jv-xvs">
                                 <rect key="frame" x="16" y="129" width="343" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="MAKE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4rD-hx-QU2">
-                                <rect key="frame" x="16" y="230" width="343" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="What Make is your vehicle?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4rD-hx-QU2">
+                                <rect key="frame" x="16" y="209" width="343" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="MODEL" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nqQ-cg-zf9">
-                                <rect key="frame" x="16" y="315" width="343" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="What Model is your ride?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nqQ-cg-zf9">
+                                <rect key="frame" x="16" y="292" width="343" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5Hk-wA-mve">
-                                <rect key="frame" x="16" y="345" width="343" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Tap to Edit" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5Hk-wA-mve">
+                                <rect key="frame" x="16" y="325" width="343" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
+                                <color key="backgroundColor" red="0.64238502470000003" green="0.456598954" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ntd-pJ-wEU">
                                 <rect key="frame" x="147" y="406" width="82" height="30"/>
@@ -558,7 +564,7 @@
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="onNextBtnClicked:forEvent:" destination="4vr-yp-JwV" eventType="touchUpInside" id="fHK-0i-K8I"/>
-                                    <segue destination="SaF-An-lH7" kind="show" id="5PJ-Jh-hZz"/>
+                                    <segue destination="SaF-An-lH7" kind="show" identifier="next" id="5PJ-Jh-hZz"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ggT-vf-Gkj">
@@ -589,17 +595,17 @@
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="onSkipBtnClicked:forEvent:" destination="4vr-yp-JwV" eventType="touchUpInside" id="RXl-Sf-vdK"/>
-                                    <segue destination="SaF-An-lH7" kind="show" id="5u3-cs-Oao"/>
+                                    <segue destination="SaF-An-lH7" kind="show" identifier="next" id="5u3-cs-Oao"/>
                                 </connections>
                             </button>
                             <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ixv-9P-U1B">
-                                <rect key="frame" x="16" y="158" width="343" height="52"/>
+                                <rect key="frame" x="16" y="154" width="343" height="45"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.64238502470000003" green="0.456598954" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </pickerView>
                             <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vyA-Y1-031">
-                                <rect key="frame" x="16" y="259" width="343" height="56"/>
+                                <rect key="frame" x="16" y="236" width="343" height="47"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.64238502470000003" green="0.456598954" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -611,6 +617,7 @@
                     <connections>
                         <outlet property="colorPickerView" destination="Ixv-9P-U1B" id="dl1-ES-dPj"/>
                         <outlet property="makePickerView" destination="vyA-Y1-031" id="ZAR-gO-4MB"/>
+                        <outlet property="modelLabel" destination="nqQ-cg-zf9" id="kJT-1a-x0p"/>
                         <outlet property="modelTextField" destination="5Hk-wA-mve" id="CNn-ac-0Yx"/>
                     </connections>
                 </viewController>
@@ -685,7 +692,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="OeG-u6-4PN" kind="show" id="xiP-fw-T06"/>
+                                    <segue destination="OeG-u6-4PN" kind="show" identifier="next" id="xiP-fw-T06"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f1n-sr-JG3">
@@ -705,7 +712,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="OeG-u6-4PN" kind="show" id="6ny-aD-WMB"/>
+                                    <segue destination="OeG-u6-4PN" kind="show" identifier="next" id="6ny-aD-WMB"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -785,7 +792,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="i0d-UR-uRw" kind="show" id="8db-Jb-aFm"/>
+                                    <segue destination="i0d-UR-uRw" kind="show" identifier="next" id="8db-Jb-aFm"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DG5-nY-V0D">
@@ -943,8 +950,8 @@
         <image name="back_arrow_white" width="378" height="597"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="sdh-bO-QGQ"/>
+        <segue reference="k6n-7P-N0S"/>
         <segue reference="5u3-cs-Oao"/>
-        <segue reference="xiP-fw-T06"/>
+        <segue reference="6ny-aD-WMB"/>
     </inferredMetricsTieBreakers>
 </document>

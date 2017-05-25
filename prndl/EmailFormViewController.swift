@@ -72,19 +72,25 @@ class EmailFormViewController: UIViewController {
     }
 
     override func shouldPerformSegue(withIdentifier identifier: String?, sender: Any?) -> Bool {
-        let emailValid = valiateEmail()
-        let passwordValid = validatePassword()
         
-        if !emailValid || !passwordValid {
-            if !emailValid{
-                emailTextField.placeholder = "Invalid e-mail address"
-                emailTextField.shake()
+        if let ident = identifier {
+            if ident != "next" {
+                return true
             }
-            if !passwordValid {
-                passwdTextField.shake()
-                passwd2TextField.shake()
+            let emailValid = valiateEmail()
+            let passwordValid = validatePassword()
+            
+            if !emailValid || !passwordValid {
+                if !emailValid{
+                    emailTextField.placeholder = "Invalid e-mail address"
+                    emailTextField.shake()
+                }
+                if !passwordValid {
+                    passwdTextField.shake()
+                    passwd2TextField.shake()
+                }
+                return false
             }
-            return false
         }
         return true
     }

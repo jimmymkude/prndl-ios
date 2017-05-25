@@ -34,23 +34,22 @@ class WhatsYourNameViewController: UIViewController {
     }
 
     override func shouldPerformSegue(withIdentifier identifier: String?, sender: Any?) -> Bool {
-        /*if let ident = identifier {
-            if ident == "YourIdentifier" {
-                if loginSuccess != true {
-                    return false
+        if let ident = identifier {
+            if ident != "next" {
+                return true
+            }
+        
+            if firstName == "" || lastName == "" {
+                if firstName == ""{
+                    firstNameTextField.placeholder = "This is a required field"
+                    firstNameTextField.shake()
                 }
+                if lastName == "" {
+                    lastNameTextField.placeholder = "This is a required field"
+                    lastNameTextField.shake()
+                }
+                return false
             }
-        }*/
-        if firstName == "" || lastName == "" {
-            if firstName == ""{
-                firstNameTextField.placeholder = "This is a required field"
-                firstNameTextField.shake()
-            }
-            if lastName == "" {
-                lastNameTextField.placeholder = "This is a required field"
-                lastNameTextField.shake()
-            }
-            return false
         }
         return true
     }
