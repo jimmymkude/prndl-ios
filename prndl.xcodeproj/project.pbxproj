@@ -20,6 +20,7 @@
 		320171D71ED03D1C00AFB2A6 /* ProviderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320171D61ED03D1C00AFB2A6 /* ProviderViewController.swift */; };
 		3227C21D1ED65A0D007C3BEE /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3227C21C1ED65A0D007C3BEE /* UserInfo.swift */; };
 		3227C21F1ED65D8C007C3BEE /* VehicleInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3227C21E1ED65D8C007C3BEE /* VehicleInfo.swift */; };
+		3227C2211ED7474A007C3BEE /* CardClassifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3227C2201ED7474A007C3BEE /* CardClassifier.swift */; };
 		323E8A651ED094AE00A1084E /* WhatsYourNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323E8A641ED094AE00A1084E /* WhatsYourNameViewController.swift */; };
 		323E8A671ED0991C00A1084E /* EmailFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323E8A661ED0991C00A1084E /* EmailFormViewController.swift */; };
 		32977FF51ED623910053C282 /* PhoneNumberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32977FF41ED623910053C282 /* PhoneNumberViewController.swift */; };
@@ -66,6 +67,7 @@
 		320171D61ED03D1C00AFB2A6 /* ProviderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProviderViewController.swift; sourceTree = "<group>"; };
 		3227C21C1ED65A0D007C3BEE /* UserInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
 		3227C21E1ED65D8C007C3BEE /* VehicleInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VehicleInfo.swift; sourceTree = "<group>"; };
+		3227C2201ED7474A007C3BEE /* CardClassifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardClassifier.swift; sourceTree = "<group>"; };
 		323E8A641ED094AE00A1084E /* WhatsYourNameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WhatsYourNameViewController.swift; sourceTree = "<group>"; };
 		323E8A661ED0991C00A1084E /* EmailFormViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailFormViewController.swift; sourceTree = "<group>"; };
 		32977FF41ED623910053C282 /* PhoneNumberViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhoneNumberViewController.swift; sourceTree = "<group>"; };
@@ -126,6 +128,7 @@
 				320171A21ED03D1C00AFB2A6 /* AppDelegate.swift */,
 				3227C21C1ED65A0D007C3BEE /* UserInfo.swift */,
 				3227C21E1ED65D8C007C3BEE /* VehicleInfo.swift */,
+				3227C2201ED7474A007C3BEE /* CardClassifier.swift */,
 				320171A41ED03D1C00AFB2A6 /* ViewController.swift */,
 				320171D01ED03D1C00AFB2A6 /* SignUpViewController.swift */,
 				323E8A641ED094AE00A1084E /* WhatsYourNameViewController.swift */,
@@ -313,6 +316,7 @@
 				320171D31ED03D1C00AFB2A6 /* MessagesViewController.swift in Sources */,
 				320171A31ED03D1C00AFB2A6 /* AppDelegate.swift in Sources */,
 				3227C21D1ED65A0D007C3BEE /* UserInfo.swift in Sources */,
+				3227C2211ED7474A007C3BEE /* CardClassifier.swift in Sources */,
 				32977FF51ED623910053C282 /* PhoneNumberViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
