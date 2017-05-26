@@ -8,7 +8,7 @@
 
 import UIKit
 
-class PlateNumberViewController: UIViewController {
+class PlateNumberViewController: UIViewController, UITextFieldDelegate {
     var userInfo : UserInfo?
     var plateNumber = ""
     var nextClicked = false
@@ -17,7 +17,7 @@ class PlateNumberViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        plateNumberTextField.delegate = self
         // Do any additional setup after loading the view.
     }
 
@@ -37,6 +37,16 @@ class PlateNumberViewController: UIViewController {
     
     func loadDataFromRideInfoViewController(userinfo: UserInfo){
         self.userInfo = userinfo
+    }
+    
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool
+    {
+        //Check for max length including the spacers we added
+        if range.location >= 7
+        {
+            return false
+        }
+        return true
     }
     
     override func shouldPerformSegue(withIdentifier identifier: String?, sender: Any?) -> Bool {

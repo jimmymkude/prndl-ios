@@ -9,6 +9,8 @@
 import UIKit
 import Foundation
 
+
+
 struct CustomDate {
     var month : Int = -1
     var year : Int = -1
@@ -183,24 +185,7 @@ class CardDetailsViewController: UIViewController, UITextFieldDelegate {
         self.userInfo = userinfo
     }
     
-    func isNumeric(str: String) -> Bool{
-        //let letters = CharacterSet.letters
-        let digits = CharacterSet.decimalDigits
-        
-        //var letterCount = 0
-        //var digitCount = 0
-        if str.characters.count == 0{
-            return false
-        }
-        
-        for uni in str.unicodeScalars {
-            if !digits.contains(uni) {
-                //letterCount += 1
-                return false
-            }
-        }
-        return true
-    }
+    
     
     func validateCardNumber() -> Bool {
         switch CardState(fromPrefix: self.cardNumberTextField.text!) {

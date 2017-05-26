@@ -47,6 +47,27 @@ extension UIView {
     }
 }
 
+extension UIViewController {
+    func isNumeric(str: String) -> Bool{
+        //let letters = CharacterSet.letters
+        let digits = CharacterSet.decimalDigits
+        
+        //var letterCount = 0
+        //var digitCount = 0
+        if str.characters.count == 0{
+            return false
+        }
+        
+        for uni in str.unicodeScalars {
+            if !digits.contains(uni) {
+                //letterCount += 1
+                return false
+            }
+        }
+        return true
+    }
+}
+
 class ViewController: UIViewController {
 
     override func viewDidLoad() {

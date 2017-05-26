@@ -23,6 +23,7 @@
 		3227C2211ED7474A007C3BEE /* CardClassifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3227C2201ED7474A007C3BEE /* CardClassifier.swift */; };
 		323E8A651ED094AE00A1084E /* WhatsYourNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323E8A641ED094AE00A1084E /* WhatsYourNameViewController.swift */; };
 		323E8A671ED0991C00A1084E /* EmailFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323E8A661ED0991C00A1084E /* EmailFormViewController.swift */; };
+		3269DEE91ED8A787002E59C4 /* HomeTableViewOptionsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3269DEE81ED8A787002E59C4 /* HomeTableViewOptionsController.swift */; };
 		32977FF51ED623910053C282 /* PhoneNumberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32977FF41ED623910053C282 /* PhoneNumberViewController.swift */; };
 		32977FF71ED624200053C282 /* RideInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32977FF61ED624200053C282 /* RideInfoViewController.swift */; };
 		32977FF91ED624860053C282 /* PlateNumberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32977FF81ED624860053C282 /* PlateNumberViewController.swift */; };
@@ -70,6 +71,7 @@
 		3227C2201ED7474A007C3BEE /* CardClassifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardClassifier.swift; sourceTree = "<group>"; };
 		323E8A641ED094AE00A1084E /* WhatsYourNameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WhatsYourNameViewController.swift; sourceTree = "<group>"; };
 		323E8A661ED0991C00A1084E /* EmailFormViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailFormViewController.swift; sourceTree = "<group>"; };
+		3269DEE81ED8A787002E59C4 /* HomeTableViewOptionsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTableViewOptionsController.swift; sourceTree = "<group>"; };
 		32977FF41ED623910053C282 /* PhoneNumberViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhoneNumberViewController.swift; sourceTree = "<group>"; };
 		32977FF61ED624200053C282 /* RideInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RideInfoViewController.swift; sourceTree = "<group>"; };
 		32977FF81ED624860053C282 /* PlateNumberViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlateNumberViewController.swift; sourceTree = "<group>"; };
@@ -131,6 +133,7 @@
 				3227C2201ED7474A007C3BEE /* CardClassifier.swift */,
 				320171A41ED03D1C00AFB2A6 /* ViewController.swift */,
 				320171D01ED03D1C00AFB2A6 /* SignUpViewController.swift */,
+				3269DEE81ED8A787002E59C4 /* HomeTableViewOptionsController.swift */,
 				323E8A641ED094AE00A1084E /* WhatsYourNameViewController.swift */,
 				323E8A661ED0991C00A1084E /* EmailFormViewController.swift */,
 				32977FF41ED623910053C282 /* PhoneNumberViewController.swift */,
@@ -310,6 +313,7 @@
 				323E8A671ED0991C00A1084E /* EmailFormViewController.swift in Sources */,
 				3227C21F1ED65D8C007C3BEE /* VehicleInfo.swift in Sources */,
 				32977FFD1ED625420053C282 /* CardDetailsViewController.swift in Sources */,
+				3269DEE91ED8A787002E59C4 /* HomeTableViewOptionsController.swift in Sources */,
 				320171A51ED03D1C00AFB2A6 /* ViewController.swift in Sources */,
 				32977FF91ED624860053C282 /* PlateNumberViewController.swift in Sources */,
 				320171D71ED03D1C00AFB2A6 /* ProviderViewController.swift in Sources */,

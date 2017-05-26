@@ -25,6 +25,16 @@ class SignUpViewController: UIViewController, UITableViewDelegate, UITableViewDa
             "Invite a Friend"
     ]
     
+    let menuMap =
+        [
+            "Reservations" : "reservationsView",
+            "Vehicle Info" : "vehicleInfoView",
+            "Payment Info" : "paymentInfoView",
+            "Upcoming Events" : "upcomingEventsView",
+            "Invite a Friend" : "inviteFriendView"
+        ]
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         print("Loading sign up view controller")
@@ -57,6 +67,18 @@ class SignUpViewController: UIViewController, UITableViewDelegate, UITableViewDa
         return menuItems.count
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        //tableView.deselectRow(at: indexPath as IndexPath, animated: true)
+        
+        let row = indexPath.row
+        let menuOptionSelected = menuItems[row]
+        let vcID = menuMap[menuOptionSelected]!
+        let nextVC = self.storyboard?.instantiateViewController(withIdentifier: vcID)
+        self.navigationController?.pushViewController(nextVC!, animated: true)
+
+
+    }
+    
     
     
     func loadUserInfo(userinfo: UserInfo){
@@ -73,14 +95,16 @@ class SignUpViewController: UIViewController, UITableViewDelegate, UITableViewDa
         print("Saving to segue sign up view controller")
     }
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
+        let destination = segue.destination
+        print("Prepared.")
     }
-    */
+    
 
 }

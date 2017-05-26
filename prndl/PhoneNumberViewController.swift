@@ -35,7 +35,7 @@ class PhoneNumberViewController: UIViewController, UITextFieldDelegate {
     }
     
     func validatePhoneNumber() -> Bool{
-        if phoneNum.characters.count == 10{
+        if phoneNum.characters.count == 10 {
             return true
         }
         
@@ -48,6 +48,17 @@ class PhoneNumberViewController: UIViewController, UITextFieldDelegate {
         print("Auto correcting")
         if textField == phoneNumberTextField
         {
+            //Range.Length will greater than 0 if user is deleting text - Allow it to replace
+            if range.length > 0
+            {
+                return true
+            }
+            
+            if !isNumeric(str: string)
+            {
+                return false
+            }
+            
             let newString = (textField.text! as NSString).replacingCharacters(in: range, with: string)
             //let components = newString.componentsSeparatedByCharactersInSet(NSCharacterSet.decimalDigitCharacterSet().invertedSet)
             let components = newString.components(separatedBy: NSCharacterSet.decimalDigits.inverted as CharacterSet)
@@ -97,7 +108,16 @@ class PhoneNumberViewController: UIViewController, UITextFieldDelegate {
     
     
     @IBAction func onNextBtnClicked(_ sender: Any, forEvent event: UIEvent) {
-        phoneNum = decimalString as String
+        let numStr = phoneNumberTextField.text!
+        let digits = CharacterSet.decimalDigits
+        phoneNum = ""
+        for uni in numStr.unicodeScalars {
+            if digits.contains(uni) {
+                phoneNum = phoneNum + uni.description
+            }
+        }
+        print("Phone NUM: \(phoneNum)")
+        //phoneNum =
         userInfo?.phoneNo = phoneNum
         nextClicked = true
     }
